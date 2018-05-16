@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.SampleRequestFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:id="@+id/llHeader_FRAGMENT_SAMPLE_REQUEST"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/bgtexture"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llFields_FRAGMENT_SAMPLE_REQUEST"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/ibSearch_FRAGMENT_SAMPLE_REQUEST"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llRepoName_FRAGMENT_SAMPLE_REQUEST"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#447fa87f"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvRepoName_FRAGMENT_SAMPLE_REQUEST"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:text="@string/tvRepoName_FRAGMENT_SAMPLE_REQUEST" />
+
+                <EditText
+                    android:id="@+id/etRepoName_FRAGMENT_SAMPLE_REQUEST"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textVisiblePassword"
+                    android:text="@string/tvRepoNamePlaceholder_FRAGMENT_SAMPLE_REQUEST"
+                    android:textColorLink="@android:color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llProjectName_FRAGMENT_SAMPLE_REQUEST"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/llRepoName_FRAGMENT_SAMPLE_REQUEST"
+                android:background="#440099CC"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvProjectName_FRAGMENT_SAMPLE_REQUEST"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:text="@string/tvProjectName_FRAGMENT_SAMPLE_REQUEST" />
+
+                <EditText
+                    android:id="@+id/etProjectName_FRAGMENT_SAMPLE_REQUEST"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textVisiblePassword"
+                    android:text="@string/tvProjectNamePlaceholder_FRAGMENT_SAMPLE_REQUEST"
+                    android:textColorLink="@android:color/black" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/ibSearch_FRAGMENT_SAMPLE_REQUEST"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF"
+            android:src="@android:drawable/ic_search_category_default"
+            tools:background="#66ff8800" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvResult_FRAGMENT_SAMPLE_REQUEST"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llHeader_FRAGMENT_SAMPLE_REQUEST"
+        android:gravity="center_vertical"
+        android:text="----> result is displayed here!!" />
+
+</RelativeLayout>
